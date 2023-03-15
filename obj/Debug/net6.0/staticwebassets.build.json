@@ -1,0 +1,71 @@
+{
+  "Version": 1,
+  "Hash": "zn64ui//5vrQ17IUMZEk19ad6EeOMVXBAJPslYCMdQ8=",
+  "Source": "demo-new-sdk",
+  "BasePath": "_content/demo-new-sdk",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [
+    {
+      "Name": "demo-new-sdk\\wwwroot",
+      "Source": "demo-new-sdk",
+      "ContentRoot": "C:\\Users\\MordechaiKatan\\source\\repos\\demo-new-sdk\\wwwroot\\",
+      "BasePath": "_content/demo-new-sdk",
+      "Pattern": "**"
+    }
+  ],
+  "Assets": [
+    {
+      "Identity": "C:\\Users\\MordechaiKatan\\source\\repos\\demo-new-sdk\\wwwroot\\Client\\index.html",
+      "SourceId": "demo-new-sdk",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\MordechaiKatan\\source\\repos\\demo-new-sdk\\wwwroot\\",
+      "BasePath": "_content/demo-new-sdk",
+      "RelativePath": "Client/index.html",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\Client\\index.html"
+    },
+    {
+      "Identity": "C:\\Users\\MordechaiKatan\\source\\repos\\demo-new-sdk\\wwwroot\\Client\\index.js",
+      "SourceId": "demo-new-sdk",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\MordechaiKatan\\source\\repos\\demo-new-sdk\\wwwroot\\",
+      "BasePath": "_content/demo-new-sdk",
+      "RelativePath": "Client/index.js",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\Client\\index.js"
+    },
+    {
+      "Identity": "C:\\Users\\MordechaiKatan\\source\\repos\\demo-new-sdk\\wwwroot\\Client\\success.html",
+      "SourceId": "demo-new-sdk",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\MordechaiKatan\\source\\repos\\demo-new-sdk\\wwwroot\\",
+      "BasePath": "_content/demo-new-sdk",
+      "RelativePath": "Client/success.html",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\Client\\success.html"
+    }
+  ]
+}

@@ -1,0 +1,67 @@
+﻿<!DOCTYPE html>
+<html lang="en" dir="rtl">
+  <head>
+    <meta charset="utf-8" />
+    <title>Grow</title>
+    <base href="/" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <script>
+      (function () {
+        var s = document.createElement("script");
+        s.type = "text/javascript";
+        s.async = true;
+        s.src = "https://cdn.meshulam.co.il/sdk/gs.min.js";
+        s.onload = configureGrowSdk; //replace with your callback function
+        var x = document.getElementsByTagName("script")[0];
+        x.parentNode.insertBefore(s, x);
+      })();
+
+      function configureGrowSdk() {
+        let eventType;
+        let config = {
+          environment: "DEV",
+          version: "1",
+          events: {
+            onSuccess: (response) => {
+              console.log(response);
+              eventType = "success";
+              const event = new CustomEvent("growWalletChange", {
+                detail: { ...response, eventType },
+              });
+              window.dispatchEvent(event);
+            },
+            onFailure: (response) => {
+              console.log(response);
+            },
+            onError: (response) => {
+              console.log(response);
+            },
+            onWalletChange: (state) => {
+              console.log(state);
+              eventType = "walletChange";
+              const event = new CustomEvent("growWalletChange", {
+                detail: { state, eventType },
+              });
+              window.dispatchEvent(event);
+            },
+          },
+        };
+        growPayment.init(config);
+      }
+    </script>
+  </head>
+  <body>
+    <button
+      style="
+        height: 30px;
+        width: 150px;
+        border-radius: 10px;
+        background-color: aqua;
+      "
+      onclick="getPaymentLink()"
+    >
+      get-payment-sdk
+    </button>
+    <script src="/Client/index.js"></script>
+  </body>
+</html>
